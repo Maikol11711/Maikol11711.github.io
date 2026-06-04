@@ -3,44 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio | Ciberseguridad</title>
+
+    <title>Maikol | Portafolio de Ciberseguridad</title>
+
+    <meta name="description" content="Portafolio de ciberseguridad con proyectos en pentesting, Linux, redes, Python y seguridad informática.">
+    <meta name="keywords" content="ciberseguridad, hacking ético, pentesting, Linux, redes, Python, SOC, TryHackMe, Hack The Box">
+    <meta name="author" content="Maikol">
+
+    <link rel="icon" href="favicon.png" type="image/png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #0f0f0f;
+            font-family: 'Inter', sans-serif;
+            background: #0b0f14;
             color: #e6e6e6;
         }
 
         header {
-            background-color: #111;
-            padding: 40px;
             text-align: center;
-            border-bottom: 2px solid #00ff88;
+            padding: 60px 20px;
+            background: #0f172a;
+            border-bottom: 1px solid #1f2937;
         }
 
         h1 {
-            color: #00ff88;
+            color: #22c55e;
             margin: 0;
+            font-size: 40px;
+        }
+
+        p {
+            color: #94a3b8;
         }
 
         section {
-            padding: 30px;
             max-width: 900px;
             margin: auto;
+            padding: 30px 20px;
+        }
+
+        h2 {
+            color: #22c55e;
         }
 
         .card {
-            background-color: #1a1a1a;
+            background: #111827;
             padding: 20px;
             margin: 15px 0;
-            border-radius: 10px;
-            border-left: 4px solid #00ff88;
+            border-radius: 12px;
+            border: 1px solid #1f2937;
+        }
+
+        .card:hover {
+            border-color: #22c55e;
+        }
+
+        .tags span {
+            display: inline-block;
+            background: #1f2937;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 6px;
+            font-size: 12px;
         }
 
         a {
-            color: #00ff88;
+            color: #22c55e;
             text-decoration: none;
         }
 
@@ -48,20 +79,22 @@
             text-decoration: underline;
         }
 
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
         footer {
             text-align: center;
             padding: 20px;
-            border-top: 1px solid #333;
-            color: #888;
+            border-top: 1px solid #1f2937;
+            color: #64748b;
         }
 
-        .tag {
-            display: inline-block;
-            background: #222;
-            padding: 5px 10px;
-            margin: 5px;
-            border-radius: 5px;
-            font-size: 12px;
+        .highlight {
+            color: #22c55e;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -69,64 +102,80 @@
 <body>
 
 <header>
-    <h1>M11</h1>
-    <p>🔐 Estudiante de Ciberseguridad | Linux | Redes | Python</p>
+    <h1>Maikol | Ciberseguridad 🔐</h1>
+    <p>Pentesting | Linux | Redes | Python</p>
 </header>
 
 <section>
     <h2>👨‍💻 Sobre mí</h2>
     <div class="card">
         <p>
-            Soy estudiante de ciberseguridad enfocado en aprender pentesting,
-            análisis de redes, Linux y desarrollo de herramientas de seguridad.
+            Estudiante de ciberseguridad enfocado en pentesting, análisis de redes, Linux y desarrollo de herramientas de seguridad.
         </p>
     </div>
 </section>
 
 <section>
     <h2>🛠 Habilidades</h2>
-    <div class="card">
-        <span class="tag">Linux</span>
-        <span class="tag">Redes</span>
-        <span class="tag">Python</span>
-        <span class="tag">Nmap</span>
-        <span class="tag">Wireshark</span>
-        <span class="tag">GitHub</span>
+    <div class="card tags">
+        <span>Linux</span>
+        <span>Redes</span>
+        <span>Python</span>
+        <span>Nmap</span>
+        <span>Wireshark</span>
+        <span>Burp Suite</span>
+        <span>GitHub</span>
     </div>
 </section>
 
 <section>
     <h2>📂 Proyectos</h2>
 
-    <div class="card">
-        <h3>🔹 Escáner de Puertos</h3>
-        <p>Script en Python para detectar puertos abiertos en una red local.</p>
-        <a href="https://github.com/TU_USUARIO" target="_blank">Ver proyecto</a>
-    </div>
+    <div class="grid">
 
-    <div class="card">
-        <h3>🔹 Hardening de Linux</h3>
-        <p>Guía de seguridad aplicada en Ubuntu para reducir vulnerabilidades.</p>
-        <a href="https://github.com/TU_USUARIO" target="_blank">Ver proyecto</a>
-    </div>
+        <div class="card">
+            <h3>Escáner de Puertos</h3>
+            <p>Script en Python para detectar puertos abiertos en redes.</p>
+            <a href="PEGA_AQUI_TU_LINK" target="_blank">Ver proyecto</a>
+        </div>
 
-    <div class="card">
-        <h3>🔹 TryHackMe Writeups</h3>
-        <p>Documentación de laboratorios y retos completados.</p>
-        <a href="https://github.com/TU_USUARIO" target="_blank">Ver GitHub</a>
+        <div class="card">
+            <h3>Hardening Linux</h3>
+            <p>Configuración de seguridad en sistemas Linux.</p>
+            <a href="PEGA_AQUI_TU_LINK" target="_blank">Ver proyecto</a>
+        </div>
+
+        <div class="card">
+            <h3>Writeups TryHackMe</h3>
+            <p>Documentación de laboratorios de ciberseguridad.</p>
+            <a href="PEGA_AQUI_TU_LINK" target="_blank">Ver GitHub</a>
+        </div>
+
     </div>
 </section>
 
 <section>
-    <h2>📫 Contacto</h2>
+    <h2>🔗 Enlaces</h2>
+
     <div class="card">
-        <p>GitHub: <a href="https://github.com/TU_USUARIO">Mi perfil</a></p>
+        <p>GitHub: <a href="PEGA_AQUI_TU_LINK">Mi perfil</a></p>
+        <p>TryHackMe: <a href="PEGA_AQUI_TU_LINK">Perfil</a></p>
+        <p>LinkedIn: <a href="PEGA_AQUI_TU_LINK">Perfil</a></p>
+    </div>
+</section>
+
+<section>
+    <h2>🚀 Objetivo</h2>
+    <div class="card">
+        <p>
+            Convertirme en <span class="highlight">Analista SOC / Pentester Junior</span> con experiencia práctica en ciberseguridad.
+        </p>
     </div>
 </section>
 
 <footer>
-    <p>© 2026 - Portafolio de Ciberseguridad</p>
+    © 2026 Maikol | Portafolio de Ciberseguridad
 </footer>
 
 </body>
-        </html>
+</html>
